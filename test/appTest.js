@@ -15,11 +15,11 @@ describe("app.js", function(){
     it('responds with a 200', function(done){
       chai.request(app)
         .get("/")
-        .end(function(err, res){          
+        .end(function(err, res){
           expect(res).to.have.status(200);
           done();
         });
-    });    
+    });
 
     it('sends "Hello, World!" as the response', function(done){
       chai.request(app)
@@ -29,5 +29,5 @@ describe("app.js", function(){
           done();
         });
     });
-  });  
+  });
 });
